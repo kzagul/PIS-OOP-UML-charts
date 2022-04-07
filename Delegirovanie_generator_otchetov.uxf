@@ -1,0 +1,19 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>350</x><y>324</y><w>120</w><h>110</h></coordinates><panel_attributes>template=T
+&lt;&lt;struct&gt;&gt;
+Statistics
+--
++ Header : string
++ Value : T</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>54</y><w>710</w><h>210</h></coordinates><panel_attributes>_ReportMakerHelper_
+--
+- &lt;&lt;const&gt;&gt; MeanAndStdCaption : string = "Mean and Std"
+- &lt;&lt;const&gt;&gt; MedianCaption : string = "Median"
+--
+_+ MeanAndStdHtmlReport(measurements:IEnumerable&lt;Measurement&gt;) : string_
+_+ MedianMarkdownReport(measurements:IEnumerable&lt;Measurement&gt;) : string_
+_+ MeanAndStdMarkdownReport(measurements:IEnumerable&lt;Measurement&gt;) : string_
+_+ MedianHtmlReport(measurements:IEnumerable&lt;Measurement&gt;) : string_
+_- Median(&lt;&lt;this&gt;&gt; data:IEnumerable&lt;double&gt;) : double_
+_- MeanAndStd(&lt;&lt;this&gt;&gt; data:IEnumerable&lt;double&gt;) : MeanAndStd_
+_- MakeHtmlReport(caption:string, statistics:IEnumerable&lt;Statistics&lt;S&gt;&gt;) : string_
+_- MakeMarkdownReport(caption:string, statistics:IEnumerable&lt;Statistics&lt;S&gt;&gt;) : string_
+_- MakeMeasurementStatistics(data:IEnumerable&lt;Measurement&gt;, f:Func&lt;IEnumerable&lt;double&gt;, S&gt;) : IEnumerable&lt;Statistics&lt;S&gt;&gt;_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>254</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>

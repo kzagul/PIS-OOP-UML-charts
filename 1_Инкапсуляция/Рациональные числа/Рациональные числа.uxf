@@ -1,0 +1,17 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>140</y><w>440</w><h>260</h></coordinates><panel_attributes>Rational
+--
+- numerator: int
+- denominator: int
+- isNan: bool
+&lt;&lt;get&gt;&gt; + Numerator: int
+&lt;&lt;get&gt;&gt; + Denominator: int
+&lt;&lt;get&gt;&gt; + IsNan: bool
+--
+_+ &lt;&lt;operator&gt;&gt; +(x: Rational , y: Rational ) : Rational_
+_+ &lt;&lt;operator&gt;&gt; - (x: Rational , y: Rational ) : Rational_
+_+ &lt;&lt;operator&gt;&gt; * (x: Rational , y: Rational ) : Rational_
+_+ &lt;&lt;operator&gt;&gt; / (x: Rational , y: Rational ) : Rational_
+
+_+ &lt;&lt;explicit&gt;&gt; &lt;&lt;operator&gt;&gt; int (a: Rational ) : Rational_
+_+ &lt;&lt;implicit&gt;&gt; &lt;&lt;operator&gt;&gt; double (x: Rational ) : Rational_
+_+ &lt;&lt;implicit&gt;&gt; &lt;&lt;operator&gt;&gt; Rational (a: int ) : Rational_</panel_attributes><additional_attributes></additional_attributes></element></diagram>

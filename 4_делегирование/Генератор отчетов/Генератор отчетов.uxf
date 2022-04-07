@@ -1,0 +1,33 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>534</y><w>490</w><h>130</h></coordinates><panel_attributes>Calculus
+template=T 
+--
++ MakeStatistics: Func&lt;IEnumerable&lt;double&gt;, T&gt;
+--
++ &lt;&lt;get&gt;&gt; &lt;&lt; -  set&gt;&gt; Caption: string
+--
++ &lt;&lt;constructor&gt;&gt; Style(caption: string, makeStatistics: Func&lt;IEnumerable&lt;double&gt;, T&gt;)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>694</y><w>720</w><h>120</h></coordinates><panel_attributes>Style
+--
++ MakeCaption: Func&lt;string, string&gt; 
++ MakeItem: Func&lt;string, string, string&gt;
+--
++ &lt;&lt;get&gt;&gt; &lt;&lt; -  set&gt;&gt; BeginList: string
++ &lt;&lt;get&gt;&gt; &lt;&lt; -  set&gt;&gt; EndList: string
+--
++ &lt;&lt;constructor&gt;&gt; Style(beginList: string, endList: string, makeCaption: Func&lt;string, string&gt;, makeItem:  Func&lt;string, string, string&gt; )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>168</y><w>710</w><h>260</h></coordinates><panel_attributes>_ReportMakerHelper_
+--
+- &lt;&lt;const&gt;&gt; MeanAndStdCaption : string = "Mean and Std"
+- &lt;&lt;const&gt;&gt; MedianCaption : string = "Median"
+_+ htmlStyle: Style_
+_+ markdownStyle: Style_
+_+ median: Calculus&lt;double&gt;_
+_+ mas: Calculus&lt;MeanAndStd&gt;_
+--
+_+ MakeReport&lt;T&gt;(measurements: IEnumerable&lt;Measurement&gt; , style:  Style , calculus: Calculus&lt;T&gt;) : string_
+
+_+ MeanAndStdHtmlReport (measurements: IEnumerable&lt;Measurement&gt; ) : string_
+
+_+ MedianMarkdownReport (measurements: IEnumerable&lt;Measurement&gt; ) : string_
+
+_+ MeanAndStdMarkdownReport (measurements: IEnumerable&lt;Measurement&gt; ) : string_
+
+_+ MedianHtmlReport (measurements: IEnumerable&lt;Measurement&gt; ) : string_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>555</x><y>419</y><w>230</w><h>290</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;60;200;60;205;270</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>419</y><w>190</w><h>140</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>170;10;170;60;20;60;15;120</additional_attributes></element></diagram>

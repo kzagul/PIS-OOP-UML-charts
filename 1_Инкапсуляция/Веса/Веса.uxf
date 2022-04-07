@@ -1,0 +1,15 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>270</x><y>240</y><w>340</w><h>200</h></coordinates><panel_attributes>Indexer
+--
+- length: int
+&lt;&lt;get&gt;&gt; + Length: int 
+
+- start: int
+&lt;&lt;get&gt;&gt; + Start: int 
+
+_-  massiv: double[]_
+_-  access: bool_
+--
+&lt;&lt;constructor&gt;&gt; +Indexer(array: double[] , start: int, length: int)
+
+&lt;&lt;indexer&gt;&gt; &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + this(index: int) : double
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,26 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>130</y><w>270</w><h>120</h></coordinates><panel_attributes>Device
+--
+&lt;&lt;readonly&gt;&gt; + id: int
+&lt;&lt;readonly&gt;&gt; + name: string 
+--
+&lt;&lt;constructor&gt;&gt; + Device(id: int,  name: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>310</y><w>410</w><h>130</h></coordinates><panel_attributes>Failure
+--
+&lt;&lt;readonly&gt;&gt; + failureType: FailureType
+&lt;&lt;readonly&gt;&gt; + expiryTime: DateTime 
+
+&lt;&lt;get&gt;&gt; + IsSerious: bool
+--
+&lt;&lt;constructor&gt;&gt; + Failure(failureType: FailureType,  expiryTime: DateTime)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>510</y><w>630</w><h>100</h></coordinates><panel_attributes>ReportMaker
+--
+
+--
+_+  FindDevicesFailedBeforeDate(date: DateTime, failures: List&lt;Failure&gt;, devices: List&lt;Device&gt;) : List&lt;string&gt;_
+_+ FindDevicesFailedBeforeDateObsolete(day: int, month: int, year: int, failureTypes: int[], deviceId: int[], times: object[][], dict: List&lt;Dictionary&lt;string, object&gt;&gt;) : List&lt;string&gt;_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>511</y><w>170</w><h>120</h></coordinates><panel_attributes>/&lt;&lt;enumeration&gt;&gt;/
+FailureType
+--
+UnexpectedShutdown
+ShortNonResponding
+HardwareFailures
+ConnectionProblems
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>431</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>507</x><y>423</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;17;10;87</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>240</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>

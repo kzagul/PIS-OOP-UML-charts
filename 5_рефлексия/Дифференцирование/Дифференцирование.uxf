@@ -1,0 +1,8 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>220</y><w>560</w><h>130</h></coordinates><panel_attributes>_Algebra_
+--
+--
+_+ Differentiate(expression: Expression&lt;Func&lt;double, double&gt;&gt; ): Expression&lt;Func&lt;double, double&gt;&gt;_
+
+_- DifferentiateBody(xp: Expression): Expression_
+
+_- ProcessMethodCall(xp: Expression, method: MethodCallExpression): Expression_</panel_attributes><additional_attributes></additional_attributes></element></diagram>

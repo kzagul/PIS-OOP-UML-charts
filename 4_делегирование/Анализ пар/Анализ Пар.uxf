@@ -1,0 +1,15 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>140</x><y>334</y><w>610</w><h>130</h></coordinates><panel_attributes>_Analysis_
+--
+
+--
+_+ FindMaxPeriodIndex(&lt;&lt;params&gt;&gt; data: DateTime[]) : int_
+
+_+ FindAverageRelativeDifference(&lt;&lt;params&gt;&gt; data: double[]) : double_
+
+_+ PairSelector&lt;Tin, Tout&gt; (data: IEnumerable&lt;Tin&gt;, process: Func&lt;Tin, Tin, Tout&gt; )  : IEnumerable&lt;Tout&gt;_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>154</y><w>490</w><h>120</h></coordinates><panel_attributes>_AnalysisExtension_
+--
+_+ Pairs&lt;T&gt;(&lt;&lt;this&gt;&gt; data: IEnumerable&lt;T&gt;) : IEnumerable&lt;Tuple&lt; T, T&gt; &gt;_
+
+_+ MaxIndex&lt;T&gt; (&lt;&lt;this&gt;&gt; data: IEnumerable&lt;T&gt;): int _
+
+_+ AverageDifference (&lt;&lt;this&gt;&gt; differences: IEnumerable&lt;double&gt;): double _</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>260</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;74</additional_attributes></element></diagram>

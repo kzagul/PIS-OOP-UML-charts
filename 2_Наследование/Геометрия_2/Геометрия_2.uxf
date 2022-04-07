@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>350</x><y>792</y><w>300</w><h>90</h></coordinates><panel_attributes>Ball
+--
+&lt;&lt;get&gt;&gt; + Radius : double
+--
+&lt;&lt;constructor&gt;&gt; + Ball(position:Vector3, radius:double)
+&lt;&lt;override&gt;&gt; + Accept(visitor: IVisitor) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>632</y><w>520</w><h>110</h></coordinates><panel_attributes>RectangularCuboid
+--
+&lt;&lt;get&gt;&gt; + SizeX : double
+&lt;&lt;get&gt;&gt; + SizeY : double
+&lt;&lt;get&gt;&gt; + SizeZ : double
+--
+&lt;&lt;constructor&gt;&gt; + RectangularCuboid(position:Vector3, sizeX:double, sizeY:double, sizeZ:double)
+&lt;&lt;override&gt;&gt; + Accept(visitor: IVisitor) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>792</y><w>400</w><h>90</h></coordinates><panel_attributes>Cylinder
+--
+&lt;&lt;get&gt;&gt; + SizeZ : double
+&lt;&lt;get&gt;&gt; + Radius : double
+--
+&lt;&lt;constructor&gt;&gt; + Cylinder(position:Vector3, sizeZ:double, radius:double)
+&lt;&lt;override&gt;&gt; + Accept(visitor: IVisitor) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>632</y><w>370</w><h>100</h></coordinates><panel_attributes>CompoundBody
+--
+&lt;&lt;get&gt;&gt; + Parts : IReadOnlyList&lt;Body&gt;
+--
+&lt;&lt;constructor&gt;&gt; + CompoundBody(parts: IReadOnlyList&lt;Body&gt;)
+&lt;&lt;override&gt;&gt; + Accept(visitor: IVisitor) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>552</y><w>80</w><h>310</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;60;290;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>552</y><w>100</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140;80;140</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>552</y><w>80</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;60;140;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>472</y><w>330</w><h>90</h></coordinates><panel_attributes>/Body/
+--
+&lt;&lt;get&gt;&gt; + Position : Vector3
+--
+&lt;&lt;constructor&gt;&gt; # Body(position:Vector3)
+/+ Accept(visitor: IVisitor) : Body/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>422</y><w>270</w><h>90</h></coordinates><panel_attributes>BoundingBoxVisitor
+--
++ Visit(ball: Ball) : Body
++ Visit(cube: RectangularCuboid) : Body
++ Visit(cylinder: Cylinder) : Body
++ Visit(compoundBody: CompoundBody) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1360</x><y>422</y><w>270</w><h>90</h></coordinates><panel_attributes>BoxifyVisitor
+--
++ Visit(ball: Ball) : Body
++ Visit(cube: RectangularCuboid) : Body
++ Visit(cylinder: Cylinder) : Body
++ Visit(compoundBody: CompoundBody) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>332</y><w>230</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;210;10;210;50;80;50;80;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>332</y><w>380</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;210;10;210;50;360;50;360;90</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>497</y><w>140</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;130;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>477</y><w>150</w><h>170</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;150;10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>327</y><w>80</w><h>170</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>288</y><w>270</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IVisitor
+--
++ Visit(ball: Ball) : Body
++ Visit(cube: RectangularCuboid) : Body
++ Visit(cylinder: Cylinder) : Body
++ Visit(compoundBody: CompoundBody) : Body</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>552</y><w>100</w><h>310</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;290;80;290</additional_attributes></element></diagram>

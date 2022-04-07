@@ -1,0 +1,40 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>403</y><w>330</w><h>120</h></coordinates><panel_attributes>Ball
+--
+&lt;&lt;get&gt;&gt; + Radius : double
+--
+&lt;&lt;constructor&gt;&gt; + Ball(position:Vector3, radius:double)
+
+&lt;&lt;override&gt;&gt; + ContainsPoint(point: Vector3) : bool
+&lt;&lt;override&gt;&gt; + GetBoundingBox() : RectangularCuboid</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>233</y><w>530</w><h>130</h></coordinates><panel_attributes>RectangularCuboid
+--
+&lt;&lt;get&gt;&gt; + SizeX : double
+&lt;&lt;get&gt;&gt; + SizeY : double
+&lt;&lt;get&gt;&gt; + SizeZ : double
+--
+&lt;&lt;constructor&gt;&gt; + RectangularCuboid (position:Vector3, sizeX:double, sizeY:double, sizeZ:double)
+&lt;&lt;override&gt;&gt; + ContainsPoint(point: Vector3) : bool
+&lt;&lt;override&gt;&gt; + GetBoundingBox() : RectangularCuboid
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>403</y><w>390</w><h>120</h></coordinates><panel_attributes>Cylinder
+--
+&lt;&lt;get&gt;&gt; + SizeZ : double
+&lt;&lt;get&gt;&gt; + Radius : double
+--
+&lt;&lt;constructor&gt;&gt; + Cylinder(position:Vector3, sizeZ:double, radius:double)
+&lt;&lt;override&gt;&gt; + ContainsPoint(point: Vector3) : bool
+&lt;&lt;override&gt;&gt; + GetBoundingBox() : RectangularCuboid
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>233</y><w>360</w><h>130</h></coordinates><panel_attributes>CompoundBody
+--
+&lt;&lt;get&gt;&gt; + SizeZ : double
+&lt;&lt;get&gt;&gt; + Radius : double
+&lt;&lt;get&gt;&gt; + Parts : IReadOnlyList&lt;Body&gt;
+--
+&lt;&lt;constructor&gt;&gt; + CompoundBody(parts:IReadOnlyList&lt;Body&gt;)
+&lt;&lt;override&gt;&gt; + ContainsPoint(point: Vector3) : bool
+&lt;&lt;override&gt;&gt; + GetBoundingBox() : RectangularCuboid
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>163</y><w>100</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;280;80;280</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>163</y><w>90</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;70;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>163</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110;80;110</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>163</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;70;110;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>43</y><w>330</w><h>130</h></coordinates><panel_attributes>/Body/
+--
+&lt;&lt;get&gt;&gt; + Position : Vector3
+--
+&lt;&lt;constructor&gt;&gt; # Body(position:Vector3)
+/+ ContainsPoint(point:Vector3) : bool/
+/+ GetBoundingBox() : RectangularCuboid/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>108</y><w>230</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;125;10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>118</y><w>170</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>150;120;150;10;10;10</additional_attributes></element></diagram>

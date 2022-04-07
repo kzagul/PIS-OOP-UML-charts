@@ -1,0 +1,32 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes
+--
+--</help_text><element><id>UMLClass</id><coordinates><x>420</x><y>214</y><w>270</w><h>50</h></coordinates><panel_attributes>Dwelling
+--
++ &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;  Owner: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>314</y><w>270</w><h>80</h></coordinates><panel_attributes>Mine
+--
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Owner: int
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Army: Army
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Treasure: Treasure
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>444</y><w>270</w><h>70</h></coordinates><panel_attributes>Creeps
+--
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Army: Army
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Treasure: Treasure
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>654</y><w>270</w><h>70</h></coordinates><panel_attributes>ResourcePile
+--
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Treasure: Treasure
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>564</y><w>270</w><h>60</h></coordinates><panel_attributes>Wolves
+--
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; + Army: Army
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>114</y><w>270</w><h>60</h></coordinates><panel_attributes>_interaction_
+--
+_+Make(player: Player, mapObject: IObjectable) _</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>359</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>359</y><w>140</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;70;10;70;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>359</y><w>140</w><h>370</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;70;10;70;350;10;350</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>320</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>360</y><w>110</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;90;40;90;40;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>220</y><w>130</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;110;60;110;60;10;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>440</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>440</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;40;10;40;140;90;140</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>160</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;14</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>140</y><w>630</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;190;10;190;10;10;610;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>140</y><w>630</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;320;10;320;10;10;610;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>340</y><w>200</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ITresurable
+-
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; -Treasure: Treasure</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>300</y><w>140</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IOwnerable
+-
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; - Owner: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>430</y><w>160</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IArmyable
+-
+&lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt; - Army: Army</panel_attributes><additional_attributes></additional_attributes></element></diagram>

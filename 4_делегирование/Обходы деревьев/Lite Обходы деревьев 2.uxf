@@ -1,0 +1,11 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>210</y><w>830</w><h>170</h></coordinates><panel_attributes>_Traversal_
+-
+
+-
+_+ Travel &lt;Tin, Tout&gt; (root: Tin, filter: Func&lt;Tin, bool&gt;, childSelector: Func&lt; Tin, IEnumerable&lt;Tin&gt; &gt;, resultSelector: Func&lt;Tin, Tout&gt;) : IEnumerable&lt;Tout&gt;_
+
+_+ GetBinaryTreeValues(parent: BinaryTree&lt;T&gt;): IEnumerable&lt;T&gt;_
+
+_+ GetEndJobs(parent: Job) : IEnumerable&lt;Job&gt;_
+
+_+ GetProducts(root:ProductCategory) : IEnumerable&lt;Product&gt;_</panel_attributes><additional_attributes></additional_attributes></element></diagram>

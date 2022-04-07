@@ -1,0 +1,19 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>410</x><y>450</y><w>470</w><h>270</h></coordinates><panel_attributes>Category
+--
+—&lt;&lt;readonly&gt;&gt; messageName: string 
+—&lt;&lt;readonly&gt;&gt; messageType: MessageType 
+—&lt;&lt;readonly&gt;&gt; messageTopic: MessageTopic
+--
+&lt;&lt;constructor&gt;&gt; + Categoty(name: string,  type: MessageType, topic: MessageTopic) 
+
+&lt;&lt;override&gt;&gt; + GetHashCode() : int
+&lt;&lt;override&gt;&gt; + Equals(obj: object) : bool
+&lt;&lt;override&gt;&gt; + ToString(obj: object) : string
+
+_&lt;&lt;operator&gt;&gt; + &gt; (one: Category. another: Category) : bool_
+_&lt;&lt;operator&gt;&gt; + &gt;= (one: Category. another: Category) : bool_
+_&lt;&lt;operator&gt;&gt; + &lt; (one: Category. another: Category) : bool_
+_&lt;&lt;operator&gt;&gt; + &lt;= (one: Category. another: Category) : bool_
+_&lt;&lt;operator&gt;&gt; + == (one: Category. another: Category) : bool_
+_&lt;&lt;operator&gt;&gt; + != (one: Category. another: Category) : bool_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>750</y><w>130</w><h>40</h></coordinates><panel_attributes>MessageType</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>750</y><w>130</w><h>40</h></coordinates><panel_attributes>MessageTopic</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>760</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>710</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>490</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>470</y><w>120</w><h>50</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IComporable</panel_attributes><additional_attributes></additional_attributes></element></diagram>
